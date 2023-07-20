@@ -1,0 +1,810 @@
+<html>
+
+<head>
+    <title>Application Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            display: inline-block;
+            max-width: 100%;
+            /* margin-bottom: 13px; */
+            word-wrap: break-word;
+            font-size: 14px;
+            vertical-align: top;
+            height: 30px;
+        }
+
+        .error {
+            color: #FF0000;
+            padding-left: 3px;
+            vertical-align: middle;
+        }
+
+        .col-lg-12.col-xs-12 {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+            float: left;
+            width: 100%;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            /* margin: 10px 0px; */
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-register {
+            padding: 10px 0px 12px;
+        }
+
+        .padd-in {
+            margin-bottom: 25px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 10px 15px;
+            background: whitesmoke;
+        }
+
+        /* .padd-in:hover {
+            box-shadow: 0px 15px 21px #00000017;
+            transform: translateY(-5px);
+        } */
+
+        .padd-in h6 {
+            text-align: center;
+            margin: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 0px 0px 15px;
+        }
+
+        .padd-in h5 {
+            font-size: 20px;
+            margin: 12px 0 0;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .field {
+            display: inline-block;
+            width: 46%;
+            padding: 0px 20px;
+        }
+
+        .padd-in .fill {
+            display: inline-block;
+            width: 30%;
+            padding: 0px 12px;
+            vertical-align: middle;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .frm-btn {
+            text-align: center;
+        }
+
+        .details.col-lg-12.col-xs-12 {
+            width: 100%;
+        }
+
+        .data {
+            display: inline-block;
+            padding: 0px 21px;
+        }
+
+        input[type="radio"] {
+            vertical-align: top;
+        }
+
+        .new {
+            display: flex;
+        }
+
+        .padd-in h4 {
+            padding: 0px 5px;
+            /* margin-bottom: 0px; */
+            font-size: 14px;
+        }
+
+        .fil {
+            display: inline-block;
+            padding: 0px 17px;
+            width: 25%;
+        }
+
+        .paste {
+            padding: 20px 35px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            width: 7%;
+            vertical-align: middle;
+            margin: -40px 0 10px;
+        }
+
+        .paste p {
+            font-size: 12px;
+            text-align: center;
+            color: #ff0500;
+        }
+
+        .filled {
+            display: inline-block;
+            padding: 0px 10px;
+            width: 17%;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e5e3e3;
+        }
+
+        th:nth-child(8) {
+            width: 16%;
+        }
+
+        .padd-in p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .form p {
+            text-align: left;
+            padding: 6px 0 0;
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            .padd-in .fill {
+                width: 28%;
+            }
+
+            .field {
+                width: 44%;
+            }
+
+            .padd-in p {
+                font-size: 13px;
+                text-align: justify;
+                padding: 5px 21px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div class="col-lg-12 col-xs-12 ">
+            <div class="row padd-in form">
+                <h5>APPLICATION FORM</h5>
+                <h6>(For Admission to Ph.D. Programme - January 2024 Session) CHECK(<span><i class="fa fa-check"
+                            aria-hidden="true"></i></span>) THE UNIT WHERE YOU WANT TO
+                    APPLY FOR PH.D.</h6>
+                <p><input type="checkbox" name="vehicle1" value="form">ChemicalBiologyUnit</p>
+                <p><input type="checkbox" name="vehicle1" value="form">Energy&amp;EnvironmentUnit</p>
+                <p><input type="checkbox" name="vehicle1" value="form">QuantumMaterials&amp;DevicesUnit</p>
+                <div class="field col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register ">
+                        <label class="control-label" for="name">Application No<span class="error">*</span></label>
+                        <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                            required="">
+                    </div>
+                </div>
+                <div class="field col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register ">
+                        <label class="control-label" for="name"> Date of receipt of
+                            Application <span class="error">*</span></label>
+                        <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                            required="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12 col-xs-12">
+            <div class="row padd-in">
+                <div class="col-lg-12 col-xs-12" style="margin: 0px; width: 100%; ">
+                    <h4>Full Name of the Applicant Mr./Ms. (Inblock Capital Letters)</h4>
+                    <div class="fil col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">First Name<span class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="fil col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">Middle Name </label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="fil col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">Last Name </label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="paste fil col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <p>upload latest colour passport size photograph here</p>
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register">
+                        <label for="text" class="text">Father’s Full Name <span class="error">*</span></label>
+                        <input type="text" name="letterno" class="form-control" pattern="[a-zA-Z0-9.( )-]+"
+                            title="Enter valid affiliation number" required="">
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register">
+                        <label class="control-label year-est" for="number">Mother’s Full Name <span
+                                class="error">*</span></label>
+                        <input type="text" class="form-control" name="year_establishment" pattern="^[0-9]+$"
+                            maxlength="4" title="Enter Valid Year Example: 2001" required="">
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register ">
+                        <label for="email" class="email">Date Of Birth <span class="error">*</span></label>
+                        <input type="date" class="form-control" name="birthday" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                            id="birthday" required="">
+                        <!-- <input type="date" id="birthday" name="birthday"> -->
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register">
+                        <label class="control-label year-est" for="number"> Gender <span class="error">*</span></label>
+                        <input type="radio" value="Male" name="gender"> Male
+                        <input type="radio" value="Female" name="gender"> Female
+                        <input type="radio" value="Female" name="gender"> Other
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <div class="form-register ">
+                        <label for="number" class="control-label year-est">Marital Status <span
+                                class="error">*</span></label>
+                        <input type="radio" value="gender" name="gender1"> Married
+                        <input type="radio" value="gender" name="gender1"> Unmarried
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register ">
+                        <label for="textarea" class="address">Spouse’s Name (If Married) </label>
+                        <input name="address" placeholder="Enter here" class="form-control " tabindex="12"
+                            maxlength="255" required="">
+                    </div>
+                </div>
+                <div class="fill col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%;">
+                    <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12" style="width: 69%; ">
+                        <div class="form-register" style="display: block;">
+                            <label for="textarea" class="address" style="display: block;margin-bottom: 10px;">Select
+                                Category <span class="error" style="
+    line-height: 19px;
+">* For Gen Category - 28 Years (+5 years expemetion SC/ ST/ PwD/ female
+                                    candidates and 31 years for OBC as per DST - CSIR Government Norms)</span></label>
+                            <input type="radio" value="catogery" name="catogery"> GEN
+                            <input type="radio" value="catogery" name="catogery"> SC
+                            <input type="radio" value="catogery" name="catogery"> ST
+                            <!-- <input type="radio" value="catogery" name="catogery"> OBC -->
+                            <input type="radio" value="catogery" name="catogery"> OBC-NCL
+                            <input type="radio" value="catogery" name="catogery"> PH Category
+                            <input type="radio" value="catogery" name="catogery"> EWS
+                            <input type="radio" value="catogery" name="catogery"> OBC-CL
+                        </div>
+                    </div>
+                    <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12" style="width: 25%; ">
+                        <label style="
+    line-height: 20px;
+    margin-bottom: 10px;
+">(Upload proof for OBC-CL/OBC-NCL/ST/SC/EWS/PH)</label>
+                        <input class="form-control" name="feature_image[]" type="file" multiple=""
+                            accept="image/png, image/gif, image/jpeg , image/jpg">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xs-12" style="margin: 0px; width: 100%; ">
+                    <h4>Permanent Address <span class="error">(Please upload address proof for e,g.:
+                            AadharCard)</span> </h4>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">Street/ House No./ Village<span
+                                    class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">District<span class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">State<span class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">Pincode<span class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <label>Upload Proof of Address</label>
+                        <input class="form-control" name="feature_image[]" type="file" multiple=""
+                            accept="image/png, image/gif, image/jpeg , image/jpg">
+                    </div>
+                </div>
+                <p> <input type="checkbox" name="message" value="message">if Correspondance
+                    Address is same as permanent address</p>
+                <div class="col-lg-12 col-xs-12" style="margin: 0px; width: 100%; ">
+                    <h4>Correspondence Address :</h4>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">Street/ House No./ Village<span
+                                    class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">District<span class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">State <span class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-register ">
+                            <label class="control-label" for="name">Pincode<span class="error">*</span></label>
+                            <input type="name" class="form-control" name="lnstitute_name" title="Enter valid name"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="filled col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <label>Upload here</label>
+                        <input class="form-control" name="feature_image[]" type="file" multiple=""
+                            accept="image/png, image/gif, image/jpeg , image/jpg">
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register">
+                        <label for="text" class="text">Mobile Number 1<span class="error">*</span></label>
+                        <input type="text" name="letterno" class="form-control" pattern="[a-zA-Z0-9.( )-]+"
+                            title="Enter valid affiliation number" required="">
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register">
+                        <label class="control-label year-est" for="number">Mobile Number 2<span
+                                class="error">*</span></label>
+                        <input type="text" class="form-control" name="year_establishment" pattern="^[0-9]+$"
+                            maxlength="4" title="Enter Valid Year Example: 2001" required="">
+                    </div>
+                </div>
+                <div class="fill col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-register ">
+                        <label for="email" class="email">E-mail ID<span class="error">*</span></label>
+                        <input type="email" class="form-control" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                            title="Enter Valid Email Address Example: mymail@gmail.com" required="">
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-xs-12" style="margin: 0px; width: 100%; ">
+                    <h4>Do you have external fellowship (e.g. UGC-JRF/ CSIR-JRF/ ICMR/ DST-INSPIRE / JEST/ other
+                        Examination) ?</h4>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Name of Fellowship</th>
+                                <th>Duration</th>
+                                <th>RollNo</th>
+                                <th>Score</th>
+                                <th>Rank</th>
+                                <th>Qualifying Year / Month</th>
+                                <th>Validity</th>
+                                <th>Upload File</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-lg-12 col-xs-12" style="margin: 0px; width: 100%; ">
+                    <h4>Do you have cleared National Qualifing Exams ?</h4>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Name of Fellowship</th>
+                                <th>Duration</th>
+                                <th>RollNo</th>
+                                <th>Score</th>
+                                <th>Rank</th>
+                                <th>Qualifying Year / Month</th>
+                                <th>Validity</th>
+                                <th>Upload File</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-lg-12 col-xs-12" style="margin: 0px; width: 100%; ">
+                    <h4>Details of academic record starting from SECONDARY (Class X) Examination:
+                        (Self-Attested photocopies of the mark sheets/certificates to be enclosed)
+                    </h4>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Degree/ Exam (withdiscipline)</th>
+                                <th>University/College /Board</th>
+                                <th>Year ofPassing</th>
+                                <th>Percentage of Marks /CPI</th>
+                                <th>Class/Grade/Rank</th>
+                                <th>SubjectsTaken</th>
+                                <th>Upload File</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Matric (10th) <span class="error">*</span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>12th <span class="error">*</span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Graduation <span class="error">*</span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Masters <span class="error">*</span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Any Other</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-lg-12 col-xs-12" style="margin: 0px; width: 100%; ">
+                    <h4>Research/Industrial Experience (Please Provide Details):-
+                    </h4>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Organization</th>
+                                <th>PostHeld</th>
+                                <th>Scale of pay/Pay Bandand GradePay</th>
+                                <th>Duration(Exactdatestobe given) </th>
+                                <th>Totalperiod(inyears)</th>
+                                <th>Natureofduties</th>
+                                <th>Upload File</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="form-control" name="feature_image[]" type="file" multiple=""
+                                        accept="image/png, image/gif, image/jpeg , image/jpg"></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="fill col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%;">
+                    <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width: 70%;padding: 0px;">
+                        <h5></h5>
+                        <div class="form-register">
+                            <label for="text" class="text">Any other detail you want to provide to assess candidature?
+                            </label>
+                            <input type="text" name="letterno" class="form-control" pattern="[a-zA-Z0-9.( )-]+"
+                                title="Enter valid affiliation number" required="">
+                        </div>
+                    </div>
+                    <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width: 25%; ">
+                        <!-- <label>Upload here</label> -->
+                        <input class="form-control" name="feature_image[]" type="file" multiple=""
+                            accept="image/png, image/gif, image/jpeg , image/jpg">
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-xs-12 " style=" width: 100%;  ">
+                    <h5> Details of Two Referees under Whom the Candidate has Worked or Studied</h5>
+                    <div class="row new">
+                        <div class="details col-lg-6 col-xs-12 ">
+                            <h4 style="
+">Reference No. 1</h4>
+                            <div class="row ">
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name">Name<span class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name"> Designation<span
+                                                class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name">Institute<span
+                                                class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name"> Telephone No.<span
+                                                class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name"> E-mail ID <span
+                                                class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details col-lg-6 col-xs-12 ">
+                            <h4 style="
+">Reference No. 2</h4>
+                            <div class="row ">
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name">Name<span class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name"> Designation<span
+                                                class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name">Institute<span
+                                                class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name"> Telephone No.<span
+                                                class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                                <div class="data col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="form-register ">
+                                        <label class="control-label" for="name"> E-mail ID <span
+                                                class="error">*</span></label>
+                                        <input type="name" class="form-control" name="lnstitute_name"
+                                            title="Enter valid name" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-lg-12 col-xs-12 ">
+            <div class="row padd-in">
+                <h5>DECLARATION BY THE APPLICANT</h5>
+                <p><input type="checkbox" name="vehicle1" value="Bike"> I hereby declare that all the particulars
+                    furnished above are correct. I understand that my
+                    association
+                    direct orindirect with any unlawful organization is forbidden. I am aware that any incorrect
+                    information may lead
+                    to cancellation of myadmission/selection. If selected foradmission, I promise to a bide by the rules
+                    and regulations of the
+                    Institute.</p>
+            </div>
+        </div>
+
+        <div class="col-md-12 " style="user-select: auto;">
+            <div class="row frm-btn" style="user-select: auto;">
+                <button class="btn btn-primary" type="submit" name="sent"
+                    style="margin-left: 10px; user-select: auto;">Submit</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
